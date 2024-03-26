@@ -1,0 +1,77 @@
+/***** PAGES PROFILE *****/
+
+
+
+/* modify the color of profile tab in top navigation */
+#profile-dropdown {
+	background-color: #f3f2f3;
+}
+
+/* modify the color of left navigation panel */
+.leftside-menu {
+	background-color: #1F3463;
+}
+
+/* puts a background color to side nav items whenever hovered */
+#hover:hover {
+	background-color: #fdfdfd;
+	color: #1F3463;
+}
+
+/* changes the color of the active navigation  */
+.side-nav-item > .active {
+	background-color: #2CA4DD;
+	color: #fff;
+}
+
+/* modify the background color of user profile box in the main content */
+.profile-user-box {
+	background-color: #1F3463;
+}
+
+/* set the LVCC logo size */
+#logo {
+	width: 100px;
+	height: 100px;
+	margin: 30px;
+	background-color: #fff; /* !important, sets the white background of logo */
+	border-radius: 100%;
+}
+
+/* set the background color of logo when the side nav is collapsed */
+#logo-bg {
+	background-color: #1F3463;
+}
+
+/* !important, sets the white background of logo */
+#logo-sm {
+	background-color: #fff;
+	border-radius: 100%;
+}
+
+/***** PAGES 404 *****/
+/* removes the background color of card, holds the student name, course, avatar and edit profile button */
+.bg-remove {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* sets the actual background color */
+.bg-primary {
+	background-color: #1F3463!important;
+}
+
+/***** ENROLLMENT STATUS *****/
+.bg-secondary {
+	background-color: #A9DDF6!important;
+}
+
+/***** APPLICANT SCREENING *****/
+/* changes the color of the active navigation in the card */
+.nav-pills > .nav-item > .active {
+	background-color: #1F3463;
+}
+
+/* changes the font color of navigation in the card */
+.nav-pills > .nav-item button {
+	color: #231F20;
+}

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Pending Requirements</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="../assets/images/lvcc-logo.png"> <!-- Set favicon to LVCC logo -->
+
+        <!-- Theme Config Js -->
+        <script src="../assets/js/hyper-config.js"></script>
+
+        <!-- App css -->
+        <link href="../assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="app-style" />
+        <!-- LVCC css -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/lvcc.css">
+
+        <!-- Icons css -->
+        <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" /> <!-- link for locale icons from Hyper Kit -->
+    </head>
+
+	<body>
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            <!-- ========== Topbar Start ========== -->
+            <div class="navbar-custom">
+                <div class="topbar container-fluid">
+                    <div class="d-flex align-items-center gap-lg-2 gap-1">
+    
+                        <!-- Topbar Brand Logo -->
+                        <div class="logo-topbar">
+                            <!-- Logo light -->
+                            <a href="index.html" class="logo-light">
+                                <span class="logo-lg">
+                                    <img src="../assets/lvcc-logo.png" alt="logo">
+                                </span>
+                                <span class="logo-sm">
+                                    <img src="../assets/lvcc-logo.png" alt="small logo">
+                                </span>
+                            </a>
+    
+                            <!-- Logo Dark -->
+                            <a href="index.html" class="logo-dark">
+                                <span class="logo-lg">
+                                    <img src="../assets/lvcc-logo.png" alt="dark logo">
+                                </span>
+                                <span class="logo-sm">
+                                    <img src="../assets/lvcc-logo.png" alt="small logo">
+                                </span>
+                            </a>
+                        </div>
+    
+                        <!-- Sidebar Menu Toggle Button -->
+                        <button class="button-toggle-menu">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+    
+                        <!-- Horizontal Menu Toggle Button -->
+                        <button class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
+    
+    
+                    </div>
+    
+                    <ul class="topbar-menu d-flex align-items-center gap-3">
+    
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i class="ri-notification-3-line font-22"></i>
+                                <span class="noti-icon-badge"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg py-0">
+                                <div class="p-2 border-top-0 border-start-0 border-end-0 border-dashed border">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0 font-16 fw-semibold"> Notification</h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="javascript: void(0);" class="text-dark text-decoration-underline">
+                                                <small>Clear All</small>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="px-3" style="max-height: 300px;" data-simplebar>
+    
+                                    <h5 class="text-muted font-13 fw-normal mt-2">Today</h5>
+                                    <!-- item-->
+    
+                                    <a href="pages-maintenance.html"
+                                        class="dropdown-item p-0 notify-item card unread-noti shadow-none mb-2" >
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="mdi mdi-close"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="notify-icon bg-primary">
+                                                        <i class="mdi mdi-comment-account-outline"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title fw-semibold font-14">School Reminders <small
+                                                            class="fw-normal text-muted ms-1">1 min ago</small></h5>
+                                                    <small class="noti-item-subtitle text-muted">Application requirements deadline to be passed on June 1st week.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+    
+                                    <!-- item-->
+                                    <a href="pages-maintenance.html"
+                                        class="dropdown-item p-0 notify-item card read-noti shadow-none mb-2">
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="mdi mdi-close"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="notify-icon bg-info">
+                                                        <i class="mdi mdi-account-plus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title fw-semibold font-14">Admin <small
+                                                            class="fw-normal text-muted ms-1">1 hours ago</small></h5>
+                                                    <small class="noti-item-subtitle text-muted">You are now registered to LVCC Scholarship Application System</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+    
+                                    <h5 class="text-muted font-13 fw-normal mt-0">Yesterday</h5>
+    
+                                    <!-- item-->
+                                    <a href="pages-maintenance.html"
+                                        class="dropdown-item p-0 notify-item card read-noti shadow-none mb-2" >
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="mdi mdi-close"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="notify-icon">
+                                                        <img src="../assets/images/users/avatar-2.jpg"
+                                                            class="img-fluid rounded-circle" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title fw-semibold font-14">LVCC Registrar <small
+                                                            class="fw-normal text-muted ms-1">1 day ago</small></h5>
+                                                    <small class="noti-item-subtitle text-muted">Hi, you may submit your pending requirements in LVCC Registrar's office on monday, June 20, 2023.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+    
+                                    
+    
+                                 
+                                </div>
+    
+                                <!-- All-->
+                                <a href="javascript:void(0);"
+                                    class="dropdown-item text-center text-primary notify-item border-top border-light py-2">
+                                    View All
+                                </a>
+    
+                            </div>
+                        </li>
+    
+                        <li class="d-none d-sm-inline-block">
+                            <div class="nav-link" id="light-dark-mode" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Theme Mode">
+                                <i class="ri-moon-line font-22"></i>
+                            </div>
+                        </li>
+    
+    
+                        <li class="d-none d-md-inline-block">
+                            <a class="nav-link" href="" data-toggle="fullscreen">
+                                <i class="ri-fullscreen-line font-22"></i>
+                            </a>
+                        </li>
+    
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="false" aria-expanded="false">
+                                <span class="account-user-avatar">
+                                    <img src="../assets/images/users/default-avatar.jpg" alt="user-image" width="32" class="rounded-circle"> <!-- user avatar -->
+                                </span>
+                                <span class="d-lg-flex flex-column gap-1 d-none">
+                                    <h5 class="my-0">Student Name</h5>
+                                    <h6 class="my-0 fw-normal">New Applicant</h6>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated profile-dropdown">
+                                <!-- item-->
+                                <div class=" dropdown-header noti-title">
+                                    <h6 class="text-overflow m-0">Welcome !</h6>
+                                </div>
+    
+                                <!-- item-->
+                                <a href="pages-maintenance.html" class="dropdown-item">
+                                    <i class="mdi mdi-account-circle me-1"></i>
+                                    <span>My Account</span>
+                                </a>
+    
+                                <!-- item-->
+                                <a href="logout.html" class="dropdown-item">
+                                    <i class="mdi mdi-logout me-1"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ========== Topbar End ========== -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu">
+
+                <!-- Brand Logo Light -->
+                <a id="logo-bg" href="PAGES-404.html" class="logo logo-light">
+                    <span class="logo-lg">
+                        <img src="../assets/images/lvcc-logo.png" id="logo" alt="logo"> <!-- LVCC logo in side nav -->
+                    </span>
+                    <span class="logo-sm">
+                        <img id="logo-sm" src="../assets/images/lvcc-logo.png" alt="small logo"> <!-- LVCC logo in collapsed side nav -->
+                    </span>
+                </a>
+                
+                <!-- Full Sidebar Menu Close Button -->
+                <div class="button-close-fullsidebar">
+                    <i class="ri-close-fill align-middle"></i> <!-- 'x' button used when the side nav is opened and the screensize is small -->
+                </div>
+
+                <!-- Sidebar -left -->
+                <div class="h-100" id="leftside-menu-container" data-simplebar>
+                    <!--- Sidemenu -->
+                    <ul class="side-nav">
+
+                        <li class="side-nav-title">Home</li>
+    
+                        <li class="side-nav-item">
+                            <a href="pages-404.html" class="side-nav-link" id="hover">
+                                <i class="uil-home-alt"></i>
+                                <span> Dashboards </span>
+                            </a>
+                        </li>
+    
+                        <li class="side-nav-title">Pages</li>
+    
+                        <li class="side-nav-item">
+                            <a  href="pages-profile.html" class="side-nav-link" id="hover">
+                                <i class="ri-account-circle-line"></i>
+                                <span> Profile </span>
+                            </a>
+                        </li>
+    
+                        <li class="side-nav-item">
+                            <a href="enrollment-status.html" class="side-nav-link" id="hover"> <!-- class is active, indicating the active page in navigation -->
+                                <i class="ri-refresh-line"></i>
+                                <span> Enrollment Status </span>
+                            </a>
+                        </li>
+    
+                        <li class="side-nav-item">
+                            <a href="pending-requirements.html" class="side-nav-link" id="hover"> <!-- class is active, indicating the active page in navigation -->
+                                <i class="ri-file-warning-fill"></i>
+                                <span> Pending Requirements </span>
+                            </a>
+                        </li>
+    
+                        <li class="side-nav-item">
+                            <a href="requests.html" class="side-nav-link" id="hover">
+                                <i class="uil-clipboard-alt"></i>
+                                <span> Requests </span>
+                            </a>
+                        </li>
+    
+                        <li class="side-nav-item">
+                            <a href="request-documents.html" class="side-nav-link" id="hover">
+                                <i class="uil-clipboard-alt"></i>
+                                <span> Request Documents </span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                    <!--- End Sidemenu -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- ========== Left Sidebar End ========== -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <div class="content">
+                    
+                    <!-- Start Content -->
+					<div class="container-fluid">
+
+						<div class="row">
+							<div class="col-12">
+								<div class="page-title-box">
+									<div class="page-title-right">
+										<ol class="breadcrumb m-0">
+											<li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+											<li class="breadcrumb-item active">Pending Requirements</li>
+										</ol>
+									</div>
+									<h4 class="page-title">Pending Requirements</h4>
+								</div>
+							</div>
+						</div>
+	
+	
+						<div class="row">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-12">
+												<form class="ps-lg-2">
+	
+													<div class="d-flex">
+														<h3>Application Requirements Information</h3>
+													</div>
+	
+	
+													<div class="mt-2 d-flex">
+														<span class="fw-bold">Applicant Name:</span>
+														<span class="mx-2">Student Name</span>
+													</div>
+	
+													<div class="mt-2 d-flex">
+														<span class="fw-bold">Grade / Strand / Course:</span>
+														<span class="mx-2">Bachelor of Science in Information Systems</span>
+													</div>
+	
+													<div class="mt-2 d-flex">
+														<span class="fw-bold">Year Level:</span>
+														<span class="mx-2">First Year</span>
+													</div>
+	
+													<div class="mt-2 d-flex">
+														<span class="fw-bold">Status:</span>
+														<span class="mx-2 text-success">New Applicant</span>
+													</div>
+	
+													<div class="mt-2 d-flex">
+														<span class="fw-bold">School Year (Term):</span>
+														<span class="mx-2 text-info">2023-2024 (1st Sem)</span>
+													</div>
+	
+													<!-- Product description -->
+													<div class="mt-4">
+														<h6 class="font-14">Note:</h6>
+														<p> Below is the list pending requirements. You can submit your
+															documents by clicking
+															the submit button in the table below. </p>
+													</div>
+	
+												</form>
+											</div> <!-- end col -->
+										</div> <!-- end row-->
+	
+										<div class="table-responsive mt-4">
+											<table class="table table-bordered table-centered mb-0">
+												<thead class="table-light">
+													<tr>
+														<th>Requirements Type</th>
+														<th>Status</th>
+														<th>Deadline</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Original PSA Birth Certificate</td>
+														<td class="text-danger">Pending</td>
+														<td>June 2023</td>
+													</tr>
+													<tr>
+														<td>Grade 12 Report Card/DepEd F-138</td>
+														<td class="text-danger">Pending</td>
+														<td>June 2023</td>
+													</tr>
+													<tr>
+														<td> 2×2 picture (white background, collared shirt)</td>
+														<td class="text-danger">Pending</td>
+														<td>June 2023</td>
+													</tr>
+													<tr>
+														<td>Certificate of Good Moral Character</td>
+														<td class="text-danger">Pending</td>
+														<td>June 2023</td>
+													</tr>
+													<tr>
+														<td>Certified True Copy of Grades</td>
+														<td class="text-danger">Pending</td>
+														<td>June 2023</td>
+													</tr>
+												</tbody>
+											</table>
+										</div> <!-- end table-responsive-->
+	
+										<!--Submit Button-->
+										<button type="button" class="btn btn-info mt-3" data-bs-toggle="modal"
+											data-bs-target="#info-alert-modal">Submit
+										</button>
+	
+										<!--Submit Modal-->
+										<div id="info-alert-modal" class="modal fade" tabindex="-1" role="dialog"
+											aria-hidden="true">
+											<div class="modal-dialog modal-md">
+												<div class="modal-content">
+													<div class="modal-body p-4">
+														<div>
+															<!-- <i class="ri-information-line h1 text-info"></i> -->
+															<h4 class="mb-3">Submit Requirements</h4>
+															<!--Requirements Type-->
+															<div class="mb-3">
+																<label for="requirementsType" class="form-label">Requirements Type</label>
+																<select class="form-select mb-3">
+																	<option selected>Choose Requirements Type</option>
+																	<option value="1">Original PSA Birth Certificate</option>
+																	<option value="2">Grade 12 Report Card/DepEd F-138</option>
+																	<option value="3">2×2 picture (white background, collared shirt)</option>
+																	<option value="4">Certificate of Good Moral Character</option>
+																	<option value="5">Certified True Copy of Grades</option>
+																</select> 
+															</div>
+															<!-- File Upload -->
+															<div class="mb-3">
+																<label for="formFile" class="form-label">Upload Document</label>
+																<input class="form-control" type="file" id="formFile">
+															  </div>
+															  <!--Date Submitted-->
+															<div class="mb-3">
+																<label for="submitted-date" class="form-label">Date Submitted</label>
+																<input class="form-control" id="example-date" type="date" name="date">
+															</div>
+															
+															<button type="button" class="btn btn-info my-2"
+																data-bs-dismiss="modal">Upload</button>
+	
+														</div>
+													</div>
+												</div><!-- /.modal-content -->
+											</div><!-- /.modal-dialog -->
+										</div><!-- /.modal -->
+									</div> <!-- end card-body-->
+								</div> <!-- end card-->
+							</div> <!-- end col-->
+						</div>
+	
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="card-header ml-2">
+											<h4>Submitted Requirements</h4>
+											<span>These are the list of submitted requirements.</span>
+										</div>
+										<table class="table table-hover table-responsive table-centered mb-0">
+											<thead class="table-dark">
+												<tr>
+													<th>Name</th>
+													<th>Status</th>
+													<th>Submitted Date</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold font-15">Copy of Certificate of Admission</td>
+													<td><i class="mdi mdi-circle text-success"></i> Approved</td>
+													<td>February 24, 2023</td>
+													<td class="table-action">
+														<a href="javascript: void(0);" class="action-icon text-primary"> <i
+																class="mdi mdi-eye-outline" data-bs-toggle="tooltip"
+																data-bs-placement="top"
+																data-bs-custom-class="primary-tooltip"
+																data-bs-title="Not functional. Still in progress"></i>
+														</a>
+														<a href="javascript: void(0);" class="action-icon text-warning"> <i
+																class="mdi mdi-pencil" data-bs-toggle="tooltip"
+																data-bs-placement="top"
+																data-bs-custom-class="warning-tooltip"
+																data-bs-title="Not functional. Still in progress"></i>
+														</a>
+														<a href="javascript: void(0);" class="action-icon text-danger"> <i
+																class="mdi mdi-delete" data-bs-toggle="tooltip"
+																data-bs-placement="top"
+																data-bs-custom-class="danger-tooltip"
+																data-bs-title="Not functional. Still in progress"></i>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold font-15">1x1 ID Picture</td>
+													<td><i class="mdi mdi-circle text-success"></i> Approved</td>
+													<td>January 25, 2023</td>
+													<td class="table-action">
+														<a href="javascript: void(0);" class="action-icon text-primary"> <i
+																class="mdi mdi-eye-outline" data-bs-toggle="tooltip"
+																data-bs-placement="top"
+																data-bs-custom-class="primary-tooltip"
+																data-bs-title="Not functional. Still in progress"></i>
+														</a>
+														<a href="javascript: void(0);" class="action-icon text-warning"> <i
+																class="mdi mdi-pencil" data-bs-toggle="tooltip"
+																data-bs-placement="top"
+																data-bs-custom-class="warning-tooltip"
+																data-bs-title="Not functional. Still in progress"></i></a>
+														<a href="javascript: void(0);" class="action-icon text-danger"> <i
+																class="mdi mdi-delete" data-bs-toggle="tooltip"
+																data-bs-placement="top"
+																data-bs-custom-class="danger-tooltip"
+																data-bs-title="Not functional. Still in progress"></i></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>
+                    <!-- end of content -->
+
+                    <!-- modal -->
+        
+                    <!-- end of modal -->
+
+                    <!-- Footer Start -->
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <script>document.write(new Date().getFullYear())</script> © LVCC
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-md-end footer-links d-none d-md-block">
+                                        <a href="javascript: void(0);">About</a>
+                                        <a href="javascript: void(0);">Support</a>
+                                        <a href="javascript: void(0);">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- end Footer -->
+
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->   
+        
+        <!-- Vendor js -->
+        <script src="../assets/js/vendor.min.js"></script>
+
+        <!-- Dashboard App js -->
+        <script src="../assets/js/pages/demo.dashboard.js"></script>
+
+        <!-- App js -->
+        <script src="../assets/js/app.min.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- Datatables js -->
+		<script src="../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script src="../assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+		<script src="../assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+		<script src="../assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
+		<!-- Datatable Init js -->
+		<script src="../assets/js/pages/demo.datatable-init.js"></script>
+
+    </body>
+    
+</html> 
